@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './ToggleBar.css';
+
 
 import {BUTTON} from './ToggleBar.style';
 
@@ -18,7 +20,7 @@ class ToggleBar extends Component{
         }
 
 		return(
-			<BUTTON className={this.props.toggle ? "rotate" : ""} style={divStyle} onClick={this.props.onToggle.bind(this)} />
+			<BUTTON className={this.props.toggle ? "rotate" : "btn-pop"} style={divStyle} onClick={this.props.onToggle.bind(this)} />
 		)
 	}
 }

@@ -9,7 +9,10 @@ module.exports = {
 		filename: 'build/bundle.js',
 		sourceMapFilename: 'build/bundle.map'
 	},
-
+	externals: {
+	    'react': 'React',
+	    'react-dom': 'ReactDOM'
+	},
 	devtool: '#source-map',
 	module: {
 		loaders: [

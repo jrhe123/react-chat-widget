@@ -23029,6 +23029,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	__webpack_require__(339);
+	
 	var _ToggleBar = __webpack_require__(193);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -23059,7 +23061,7 @@
 					borderRadius: borderRadius
 				};
 	
-				return _react2.default.createElement(_ToggleBar.BUTTON, { className: this.props.toggle ? "rotate" : "", style: divStyle, onClick: this.props.onToggle.bind(this) });
+				return _react2.default.createElement(_ToggleBar.BUTTON, { className: this.props.toggle ? "rotate" : "btn-pop", style: divStyle, onClick: this.props.onToggle.bind(this) });
 			}
 		}]);
 	
@@ -47388,6 +47390,55 @@
 	   storageBucket: "react-widget.appspot.com",
 	   messagingSenderId: "755476967130"
 	};
+
+/***/ }),
+/* 339 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(340);
+	if (typeof content === 'string') content = [[module.id, content, '']];
+	// Prepare cssTransformation
+	var transform;
+	
+	var options = {};
+	options.transform = transform;
+	// add the styles to the DOM
+	var update = __webpack_require__(189)(content, options);
+	if (content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if (false) {
+		// When the styles change, update the <style> tags
+		if (!content.locals) {
+			module.hot.accept("!!../../../node_modules/css-loader/index.js!./ToggleBar.css", function () {
+				var newContent = require("!!../../../node_modules/css-loader/index.js!./ToggleBar.css");
+				if (typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function () {
+			update();
+		});
+	}
+
+/***/ }),
+/* 340 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(188)(undefined);
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".btn-pop{\r\n\tanimation: popout 0.8s 1;\r\n\ttransition: all ease 0.2s;\r\n}\r\n@keyframes popout {\r\n    0% {\r\n\t    transform: scale3d(0.1, 0.1, 0.1);\r\n\t}\r\n\t100% {\r\n\t    transform: scale3d(1, 1, 1);\r\n\t}\r\n}", ""]);
+	
+	// exports
+
 
 /***/ })
 /******/ ]);
