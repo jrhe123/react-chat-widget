@@ -1,4 +1,4 @@
-# react-webpack-seed
+# react-chat-widget
 
 simple react seed
 
