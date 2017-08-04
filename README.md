@@ -20,8 +20,8 @@ How to include this widget:
 	
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom.js"></script>
-<script type="text/javascript" src="./bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom.js"></script>
+	<script type="text/javascript" src="./bundle.js"></script>
 
 </html>
