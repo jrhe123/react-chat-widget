@@ -9,6 +9,7 @@ module.exports = {
 		filename: 'build/bundle.js',
 		sourceMapFilename: 'build/bundle.map'
 	},
+
 	devtool: '#source-map',
 	module: {
 		loaders: [
@@ -19,7 +20,8 @@ module.exports = {
 					presets: ['react', 'es2015']
 				}
 
-			}
+			},
+			{ test: /\.css$/, loader: "style-loader!css-loader" }
 		]
 	}
 }

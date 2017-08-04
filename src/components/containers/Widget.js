@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Widget.css';
+
 
 // Components
 import { ToggleBar, Comment } from '../presentation'
