@@ -7,8 +7,13 @@ export default (props) => {
 	const formatted = formatDate(date);
 
 	return (
-		<div style={style.comment}> 
-			{formatted}: {comment.text}
+		<div>
+			<div style={style.time}>
+				{formatted}
+			</div>
+			<div style={style.comment}> 
+				{comment.text}
+			</div>
 		</div>
 	)
 }
@@ -27,9 +32,17 @@ function formatDate(date) {
 
 const style = {
 
+	time:{
+		textAlign:"left",
+		color: "#8F8F8F",
+		fontSize: "12px",
+		paddingLeft:12,
+		paddingTop:6
+	},
+
 	comment: {
 		textAlign:"left",
-		padding:12, 
+		padding:"6px 12px 12px 12px", 
 		borderBottom:"1px dotted #ddd"
 	}
 }
